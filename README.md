@@ -39,4 +39,6 @@ Resources:
 
 https://blog.f-secure.com/dynamic-shellcode-execution/
 
+https://wikileaks.org/ciav7p1/cms/files/BypassAVDynamics.pdf
+
 https://0xpat.github.io/
