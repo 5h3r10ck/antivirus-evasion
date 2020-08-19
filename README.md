@@ -33,3 +33,9 @@ unsigned char buf[] =
 "\x47\x13\x72\x6f\x6a\x00\x53\xff\xd5";
 
 ```
+
+Resources:
+
+https://blog.f-secure.com/dynamic-shellcode-execution/
+
+https://0xpat.github.io/
