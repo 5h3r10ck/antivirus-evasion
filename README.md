@@ -39,6 +39,8 @@ Resources:
 
 https://blog.f-secure.com/dynamic-shellcode-execution/
 
+https://evasions.checkpoint.com/
+
 https://blog.sevagas.com/
 
 https://0xpat.github.io/
