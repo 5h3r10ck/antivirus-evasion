@@ -35,8 +35,9 @@ unsigned char buf[] =
 ```
 Just by xoring the generated shellcode we bypassed some signature based detections, and we went from 30 detections to 19.
 
-singing the executable moved us from 19 to 13 detections.
-```
+singing the executable moved us from 19 to 13 detections. But we still get flagged by heuristic analysis.
+
+```cmd
 $cert = New-SelfSignedCertificate -DnsName www.5h3r10ck.github.io -Type CodeSigning -CertStoreLocation Cert:\CurrentUser\My
 $CertPassword = ConvertTo-SecureString -String "my_passowrd" -Force –AsPlainText
 Export-PfxCertificate -Cert "cert:\CurrentUser\My\$($cert.Thumbprint)" -FilePath "C:\Users\test\Desktop\antivirus-evading\selfsigncert.pfx" -Password $CertPassword
