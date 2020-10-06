@@ -46,6 +46,8 @@ signtool.exe sign /v /f "selfsigncert.pfx" /p "my_passowrd" -t "http://timestamp
 
 ![image](https://i.ibb.co/1LSdZ9N/Screenshot-5.png)
 
+Adding RAM check, we went from 6/69 detections to 4/69 detections.
+
 Resources:
 
 https://blog.f-secure.com/dynamic-shellcode-execution/
