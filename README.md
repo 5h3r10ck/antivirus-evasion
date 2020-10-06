@@ -35,7 +35,7 @@ unsigned char buf[] =
 ```
 Just by xoring the generated shellcode we bypassed some signature based detections, and we went from 30 detections to 19.
 
-singing the executable moved us from 19 to 13 detections. But we still get flagged by heuristic analysis.
+singing the executable moved us from 19 to 6 detections. But we still get flagged by dynamic analysis.
 
 ```cmd
 $cert = New-SelfSignedCertificate -DnsName www.5h3r10ck.github.io -Type CodeSigning -CertStoreLocation Cert:\CurrentUser\My
@@ -43,6 +43,9 @@ $CertPassword = ConvertTo-SecureString -String "my_passowrd" -Force –AsPlainTe
 Export-PfxCertificate -Cert "cert:\CurrentUser\My\$($cert.Thumbprint)" -FilePath "C:\Users\test\Desktop\antivirus-evading\selfsigncert.pfx" -Password $CertPassword
 signtool.exe sign /v /f "selfsigncert.pfx" /p "my_passowrd" -t "http://timestamp.verisign.com/scripts/timstamp.dll" "malware.exe"
 ```
+
+![image](https://i.ibb.co/1LSdZ9N/Screenshot-5.png)
+
 Resources:
 
 https://blog.f-secure.com/dynamic-shellcode-execution/
