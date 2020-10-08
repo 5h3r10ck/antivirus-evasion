@@ -92,6 +92,8 @@ signtool.exe sign /v /f "selfsigncert.pfx" /p "my_passowrd" -t "http://timestamp
 
 By adding RAM and HardDiskDrive checks, we escaped some sandboxed environement and we went from 6/69 detections to 4/69 detections.
 
+![image2](https://i.ibb.co/5nN04Wv/Screenshot-6.png)
+
 Resources:
 
 https://blog.f-secure.com/dynamic-shellcode-execution/
